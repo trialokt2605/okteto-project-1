@@ -10,7 +10,7 @@ RUN a2enmod  rewrite
 RUN wget https://raw.githubusercontent.com/trialokt2605/okteto-project-1/main/000-default.conf
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN mv 000-default.conf /etc/apache2/sites-available
-RUN echo '<h1><center>Okee udah bisa - Dari https://github.com/trialokt2605/okteto-project-1!</center></h1>' >/var/www/html/index.html
+RUN echo '<h1><center>Okee udah bisa - Dari <a href="https://github.com/trialokt2605/okteto-project-1</a>!</center></h1>' >/var/www/html/index.html
 RUN echo 'wstunnel -s 0.0.0.0:8989 & ' >>/luo.sh
 RUN echo 'service mysql restart' >>/luo.sh
 RUN echo 'service apache2 restart' >>/luo.sh
