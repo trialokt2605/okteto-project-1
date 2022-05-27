@@ -1,5 +1,5 @@
 services:
-  areyouok:
+  ngoke:
     build: .
     ports:
       - 80:80
